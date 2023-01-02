@@ -1,5 +1,5 @@
 # WatDiv
-#Waterloo SPARQL Diversity Test Suite
+## Waterloo SPARQL Diversity Test Suite
 
 WatDiv is a benchmark designed to measure how an RDF data management system performs across a wide spectrum of SPARQL queries with varying structural characteristics and selectivity classes.
 
