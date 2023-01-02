@@ -36,7 +36,7 @@ Using these features, we designed the WatDiv test dataset (see the associated da
 ## People
 
 [Güneş Aluç](https://www.linkedin.com/in/gunes-aluc-66588a221/) (Former PhD Student)
->
+
 [M. Tamer Özsu](https://cs.uwaterloo.ca/~tozsu/)
 
 [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/)
