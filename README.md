@@ -21,7 +21,7 @@ Using these features, we designed the WatDiv test dataset (see the associated da
 
 ## Talks
 
-* G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. Diversified stress testing of RDF data management systems ([Video] (http://videolectures.net/iswc2014_aluc_rdf_data_management/). Talk at 13th Int. Semantic Web Conference, Trentino, Italy, 2004.
+* G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. Diversified stress testing of RDF data management systems ([Video](http://videolectures.net/iswc2014_aluc_rdf_data_management/)). Talk at 13th Int. Semantic Web Conference, Trentino, Italy, 2004.
 
 ## Publications
 
@@ -35,14 +35,14 @@ Using these features, we designed the WatDiv test dataset (see the associated da
 
 ## People
 
-[Güneş Aluç] (https://www.linkedin.com/in/gunes-aluc-66588a221/) (Former PhD Student)
-
+[Güneş Aluç](https://www.linkedin.com/in/gunes-aluc-66588a221/) (Former PhD Student)
+>
 [M. Tamer Özsu](https://cs.uwaterloo.ca/~tozsu/)
 
 [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/)
 
-[Olaf Hartig] (http://olafhartig.de)
+[Olaf Hartig](http://olafhartig.de)
 
-[Lukasz Golab] (http://www.engineering.uwaterloo.ca/~lgolab/)
+[Lukasz Golab](http://www.engineering.uwaterloo.ca/~lgolab/)
 
-[Libo Gao] (https://www.linkedin.com/in/libo-gao/) (Former MMath student)
+[Libo Gao](https://www.linkedin.com/in/libo-gao/) (Former MMath student)
