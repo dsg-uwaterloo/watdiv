@@ -21,7 +21,7 @@ Using these features, we designed the WatDiv test dataset (see the associated da
 
 ## Talks
 
-* G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. Diversified stress testing of RDF data management systems ([Video](http://videolectures.net/iswc2014_aluc_rdf_data_management/). Talk at 13th Int. Semantic Web Conference, Trentino, Italy, 2004.
+* G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. Diversified stress testing of RDF data management systems ([Video](http://videolectures.net/iswc2014_aluc_rdf_data_management/)). Talk at 13th Int. Semantic Web Conference, Trentino, Italy, 2004.
 
 ## Publications
 
