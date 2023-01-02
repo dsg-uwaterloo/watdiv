@@ -35,14 +35,14 @@ Using these features, we designed the WatDiv test dataset (see the associated da
 
 ## People
 
-[Güneş Aluç] (https://www.linkedin.com/in/gunes-aluc-66588a221/) (Former PhD Student)
+[Güneş Aluç](https://www.linkedin.com/in/gunes-aluc-66588a221/) (Former PhD Student)
 
 [M. Tamer Özsu](https://cs.uwaterloo.ca/~tozsu/)
 
 [Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/)
 
-[Olaf Hartig] (http://olafhartig.de)
+[Olaf Hartig](http://olafhartig.de)
 
-[Lukasz Golab] (http://www.engineering.uwaterloo.ca/~lgolab/)
+[Lukasz Golab](http://www.engineering.uwaterloo.ca/~lgolab/)
 
-[Libo Gao] (https://www.linkedin.com/in/libo-gao/) (Former MMath student)
+[Libo Gao](https://www.linkedin.com/in/libo-gao/) (Former MMath student)
