@@ -17,7 +17,7 @@ The WatDiv data generator allows users to define their own dataset through a dat
 * the probability that an entity of type X is associated with an entity of type Y, and
 * the cardinality of such associations.
 
-Using these features,  the WatDiv test dataset is designed (see the associated dataset description model). By executing the data generator with different scale factors, it is possible to generate test datasets with different sizes. Table 1 lists the properties of the dataset at scale factor=1.
+Using these features,  the WatDiv test dataset is designed (see the associated dataset description model). By executing the data generator with different scale factors, it is possible to generate test datasets with different sizes. <a href="#table:triples">Table 1</a> lists the properties of the dataset at scale factor=1.
 
 <table border="1" cellpadding="0" cellspacing="0">
 	<caption>
@@ -39,60 +39,6 @@ Using these features,  the WatDiv test dataset is designed (see the associated d
 </tfoot>-->
 </table>
 
-<table border="1" cellpadding="0" cellspacing="0">
-     <caption>
-         <a name="table:triples"> 
-            Table 1. Characteristics of the WatDiv test dataset at scale factor=1.
-         </a>
-     </caption>
-<!---    <tr>
-         <th></th>
-         <th>scale factor=1</th>
-     </tr>
--->
-     <tr>
-        <td>
-            <i>triples</i>
-        </td>
-        <td>105257</td>
-    </tr>
-    <tr>
-        <td>
-            <i>distinct subjects</i>
-        </td>
-        <td>5597</td>
-    </tr>
-    <tr>
-        <td>
-            <i>distinct predicates</i>
-        </td>
-        <td>85</td>
-    </tr>
-    <tr>
-         <td>
-            <i>distinct objects</i>
-         </td>
-         <td>13258</td>
-    </tr>
-    <tr>
-        <td>
-            <i>URIs</i>
-        </td>
-        <td>5947</td>
-    </tr>
-    <tr>
-        <td>
-            <i>literals</i>
-        </td>
-        <td>14286</td>
-    </tr>
-    <tr>
-        <td>
-            <i>distinct literals</i>
-        </td>
-        <td>8018</td>
-    </tr>
-</table>
 
 ## Talks
 
