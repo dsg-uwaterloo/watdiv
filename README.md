@@ -29,12 +29,12 @@ Using these features,  the WatDiv test dataset is designed (see the associated d
 <!---	<thead><tr><th align="left">Column 1</th><th align="right">#</th></tr></thead> -->
 <tbody>
 <tr valign="top"><td><i>triples</i></td><td 105257</td></tr>
-<tr valign="top"><td><i>distinct subjects</i><td 5597</td></tr>
-<tr valign="top"><td><i>distinct predicates</i><td 85</td></tr>
-<tr valign="top"><td><i>distinct objects</i><td 13258</td></tr>
-<tr valign="top"><td><i>URIs</i><td 5947</td></tr>
-<tr valign="top"><td><i>literals</i><td 14286</td></tr>
-<tr valign="top"><td><i>distinct literals</i><td 8018</td></tr>
+<tr valign="top"><td><i>distinct subjects</i></td><td 5597</td></tr>
+<tr valign="top"><td><i>distinct predicates</i></td><td 85</td></tr>
+<tr valign="top"><td><i>distinct objects</i></td><td 13258</td></tr>
+<tr valign="top"><td><i>URIs</i></td><td 5947</td></tr>
+<tr valign="top"><td><i>literals</i></td><td 14286</td></tr>
+<tr valign="top"><td><i>distinct literals</i></td><td 8018</td></tr>
 </tbody>
 <!---<tfoot><tr valign="top"><td align="right">Sum:</td><td align="right">1,234,569</td></tr>
 </tfoot>-->
