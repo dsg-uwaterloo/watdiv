@@ -39,7 +39,7 @@ Using these features,  the WatDiv test dataset is designed (see the associated d
 </tfoot>-->
 </table>
 
-<table>
+<table border="1" cellpadding="0" cellspacing="0">
      <caption>
          <a name="table:triples"> 
             Table 1. Characteristics of the WatDiv test dataset at scale factor=1.
