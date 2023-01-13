@@ -36,8 +36,8 @@ Using these features,  the WatDiv test dataset is designed (see the associated d
 <tr valign="top"><td><i>literals</i><td 14286</td></tr>
 <tr valign="top"><td><i>distinct literals</i><td 8018</td></tr>
 </tbody>
-<!---<tfoot><tr valign="top"><td align="right">Sum:</td><td align="right">1,234,569</td></tr>-->
-</tfoot>
+<!---<tfoot><tr valign="top"><td align="right">Sum:</td><td align="right">1,234,569</td></tr>
+</tfoot>-->
 </table>
 
 <table>
