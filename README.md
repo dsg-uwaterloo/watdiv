@@ -9,7 +9,7 @@ WatDiv consists of two components: the data generator and the query (and templat
 
 ### Description of WatDiv
 
-The detailed description of WatDiv is <a href="https://dsg-uwaterloo.github.io/watdiv/Description.md">here</a>.
+The detailed description of WatDiv is [here](Description.md).
 
 <!--
 ### Description of the Dataset
