@@ -94,15 +94,15 @@ At this point, you may be wondering how these differentiating aspects of WatDiv 
 
 ### Download the Latest Version
 
-Provided that you include a citation to [1], you are free to download and use the WatDiv Data and Query Generator (v0.6) from <a =href="https://dsg.uwaterloo.ca/watdiv/watdiv_v06.tar">source code</a> (md5sum=9eac247dfdec044d7fa0141ea3ad361f). The software is supplied "as is" and all use is at your own risk.
+Provided that you include a citation to [1], you are free to download and use the WatDiv Data and Query Generator (v0.6) from [source code](https://dsg.uwaterloo.ca/watdiv/watdiv_v06.tar) (md5sum=9eac247dfdec044d7fa0141ea3ad361f). The software is supplied "as is" and all use is at your own risk.
 
-Executable files are also provided. Source code and executable files of all versions and changelog can be found <a href="https://dsg.uwaterloo.ca/watdiv/changelog.shtml">here</a>.
+Executable files are also provided. Source code and executable files of all versions and changelog can be found [here](https://dsg.uwaterloo.ca/watdiv/changelog.shtml).
 
 The datasets used in the experiments in [1], as well as a billion triples dataset are also available for download:
 
 * [10M Triples](https://dsg.uwaterloo.ca/watdiv/watdiv.10M.tar.bz2) 58,558,746 bytes
-* <a href="https://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2">100M Triples</a> 629,608,436 bytes
-* <a href="https://dsg.uwaterloo.ca/watdiv/watdiv.1000M.tar.bz2">1B Triples</a> 6,502,656,740 bytes
+* [100M Triples](https://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2) 629,608,436 bytes
+* [1B Triples](https://dsg.uwaterloo.ca/watdiv/watdiv.1000M.tar.bz2) 6,502,656,740 bytes
 
 You may also download the <a href="https://dsg.uwaterloo.ca/watdiv/stress-workloads.tar.gz">test workloads</a> used in [1].
 
@@ -112,11 +112,11 @@ You may also download the <a href="https://dsg.uwaterloo.ca/watdiv/stress-worklo
 
 ## Publications
 
-1. G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. <a href="https://doi.org/10.1007/978-3-319-11964-9_13">Diversified stress testing of RDF data management systems</a>, In _Proc. 13th Int. Semantic Web Conference_, Part I, pages 197–212, 2014.
+1. G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. [Diversified stress testing of RDF data management systems](https://doi.org/10.1007/978-3-319-11964-9_13, In _Proc. 13th Int. Semantic Web Conference_, Part I, pages 197–212, 2014.
 
-2. G. Aluç, M. T. Özsu, and K. Daudjee. <a href="https://dl.acm.org/doi/10.14778/2732951.2732957">Workload matters: Why RDF databases need a new design</a>, _Proc. VLDB Endowment_, 7(10):837–840, 2014.
+2. G. Aluç, M. T. Özsu, and K. Daudjee. [Workload matters: Why RDF databases need a new design](https://dl.acm.org/doi/10.14778/2732951.2732957, _Proc. VLDB Endowment_, 7(10):837–840, 2014.
 
-3. L. Gao, L. Golab, M. T. Özsu, G. Aluç. <a href="https://dl.acm.org/doi/10.1145/3208352.3208355">Stream WatDiv: A Streaming RDF Benchmark</a>, In _Proc. International Workshop on Semantic Big Data_, pages 1-6, 2018.
+3. L. Gao, L. Golab, M. T. Özsu, G. Aluç. [Stream WatDiv: A Streaming RDF Benchmark](https://dl.acm.org/doi/10.1145/3208352.3208355, In _Proc. International Workshop on Semantic Big Data_, pages 1-6, 2018.
 
 ## Artifacts
 
