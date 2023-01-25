@@ -112,11 +112,11 @@ You may also download the <a href="https://dsg.uwaterloo.ca/watdiv/stress-worklo
 
 ## Publications
 
-1. G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. [Diversified stress testing of RDF data management systems](https://doi.org/10.1007/978-3-319-11964-9_13, In _Proc. 13th Int. Semantic Web Conference_, Part I, pages 197–212, 2014.
+1. G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. [Diversified stress testing of RDF data management systems](https://doi.org/10.1007/978-3-319-11964-9_13), In _Proc. 13th Int. Semantic Web Conference_, Part I, pages 197–212, 2014.
 
-2. G. Aluç, M. T. Özsu, and K. Daudjee. [Workload matters: Why RDF databases need a new design](https://dl.acm.org/doi/10.14778/2732951.2732957, _Proc. VLDB Endowment_, 7(10):837–840, 2014.
+2. G. Aluç, M. T. Özsu, and K. Daudjee. [Workload matters: Why RDF databases need a new design](https://dl.acm.org/doi/10.14778/2732951.2732957), _Proc. VLDB Endowment_, 7(10):837–840, 2014.
 
-3. L. Gao, L. Golab, M. T. Özsu, G. Aluç. [Stream WatDiv: A Streaming RDF Benchmark](https://dl.acm.org/doi/10.1145/3208352.3208355, In _Proc. International Workshop on Semantic Big Data_, pages 1-6, 2018.
+3. L. Gao, L. Golab, M. T. Özsu, G. Aluç. [Stream WatDiv: A Streaming RDF Benchmark](https://dl.acm.org/doi/10.1145/3208352.3208355), In _Proc. International Workshop on Semantic Big Data_, pages 1-6, 2018.
 
 ## Artifacts
 
