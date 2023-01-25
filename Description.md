@@ -85,8 +85,45 @@ WatDiv generates test workloads that are as diverse as possible. WatDiv offers t
 
 * __Stress Testing:__ As described in the <a href="https://doi.org/10.1007/978-3-319-11964-9_13">stress testing paper</a>, this use case offers a much more thorough investigation of systems. To generate query templates, follow the installation procedures.
 
-At this point, you may be wondering how these differentiating aspects of WatDiv affect system evaluation, and why they are important at all. The answer is trivial: by relying on a more diverse dataset as such (which is typical for data on the Web), it is possible to generate test queries that focus on much wider aspects of query evaluation, which cannot be easily captured by other benchmarks. Consider the two SPARQL query templates C3 and S7 (cf., basic testing query templates). C3 is a star query that retrieves certain information about users such as the products they like, their friends and some demographics information. For convenience, for each triple pattern in the query template, we also display its selectivity (the reported selectivities are estimations based on the probability distributions specified in the WatDiv dataset description model). Note that while individually triple patterns in C3 are not that selective, this query as a whole, is very selective. Now, consider S7, which (as a whole) is also very selective, but unlike C3, its selectivity is largely due to only a single triple pattern. It turns out that different systems behave very differently for these queries. Systems like RDF-3x [2], which (i) decompose queries into triple patterns, (ii) find a suitable ordering of the join operations and then (iii) execute the joins in that order, perform very well on queries like S7 because the first triple pattern they execute is very selective. On the other hand, they do not do as well on queries like C3 because the decomposed evaluation produces many irrelevant intermediate tuples. In contrast, gStore [3] treats the star-shaped query as a whole and it can pinpoint the relevant vertices in the RDF graph without performing joins; hence, it is much more efficient in executing C3. For a more detailed discussion of our results, please refer to the technical report [4] and the <a http="https://doi.org/10.1007/978-3-319-11964-9_13">stress testing paper</a>.
+At this point, you may be wondering how these differentiating aspects of WatDiv affect system evaluation, and why they are important at all. The answer is trivial: by relying on a more diverse dataset as such (which is typical for data on the Web), it is possible to generate test queries that focus on much wider aspects of query evaluation, which cannot be easily captured by other benchmarks. Consider the two SPARQL query templates C3 and S7 (cf., basic testing query templates). C3 is a star query that retrieves certain information about users such as the products they like, their friends and some demographics information. For convenience, for each triple pattern in the query template, we also display its selectivity (the reported selectivities are estimations based on the probability distributions specified in the WatDiv dataset description model). Note that while individually triple patterns in C3 are not that selective, this query as a whole, is very selective. Now, consider S7, which (as a whole) is also very selective, but unlike C3, its selectivity is largely due to only a single triple pattern. It turns out that different systems behave very differently for these queries. Systems like RDF-3x [^2], which (i) decompose queries into triple patterns, (ii) find a suitable ordering of the join operations and then (iii) execute the joins in that order, perform very well on queries like S7 because the first triple pattern they execute is very selective. On the other hand, they do not do as well on queries like C3 because the decomposed evaluation produces many irrelevant intermediate tuples. In contrast, gStore [^3] treats the star-shaped query as a whole and it can pinpoint the relevant vertices in the RDF graph without performing joins; hence, it is much more efficient in executing C3. For a more detailed discussion of our results, please refer to the technical report [^4] and the <a http="https://doi.org/10.1007/978-3-319-11964-9_13">stress testing paper</a>.
+
+### Installing WatDiv Data, Query and Query Template Generator
+
+Compiling WatDiv (in C++) is straightforward -- the only dependencies are the <a href="http://www.boost.org/">Boost libraries</a> and the Unix words file (i.e., make sure you have a <a href="http://packages.ubuntu.com/trusty/wordlist">wordlist package</a> installed under /usr/share/dict/). Once you have installed Boost, simply execute the following commands on UNIX:
+
+* tar xvf watdiv_v05.tar
+* cd watdiv
+* setenv BOOST_HOME <BOOST-INSTALLATION-DIRECTORY>
+* export BOOST_HOME=<BOOST-INSTALLATION-DIRECTORY> (in bash)
+* make
+* cd bin/Release
+
+The last step above is important. To run the data generator, issue the following command:
+
+* ./watdiv -d \<model-file\> \<scale-factor\>
+
+You will find a model file in the model sub-directory where WatDiv was installed. Using a scale factor of 1 will generate approximately 100K triples. For a more detailed description of the dataset that will be generated, please refer to <a href="#table:triples">Table 1</a>. This will print the generated RDF triples on the standard output while producing a file named __saved.txt__ in the same directory. The following steps depend on this file, therefore, keep it safe.
+
+To run the query generator, issue the following command:
+
+* ./watdiv -q <model-file> <query-file> <query-count> <recurrence-factor>
+
+Use the same model file in the model sub-directory where WatDiv was installed. You will find the <a href="https://dsg.uwaterloo.ca/watdiv/basic-testing.shtml">basic testing query templates</a> in the testsuite sub-directory where WatDiv was installed.
+
+To generate more query templates for stress testing (cf., <a href="https://cs.uwaterloo.ca/~galuc/watdiv/paper/">stress testing paper</a>), use the _query template generator_.
+
+* ./watdiv -s <model-file> <dataset-file> <max-query-size> <query-count>
+
+In the latest version, you may specify (i) the number of bound patterns in the query (default=1) as well as (ii) whether join vertices can be constants or not (default=false). To use these features, execute watdiv with the following signature instead.
+
+* ./watdiv -s <model-file> <dataset-file> <max-query-size> <query-count> <constant-per-query-count> <constant-join-vertex-allowed?>
 
 ### References
 
 [^1] S. Duan, A. Kementsietsidis, K. Srinivas, and O. Udrea. Apples and oranges: a comparison of RDF benchmarks and real RDF datasets. In *Proc. ACM SIGMOD Int. Conf. on Management of Data*, 2011, pages 145-156.
+
+[^2] T. Neumann and G. Weikum. The RDF-3X engine for scalable management of RDF data. VLDB J., 19(1): 91-113, 2010.
+
+[^3] L. Zou, J. Mo, D. Zhao, L. Chen, and M. T. Özsu. gStore: Answering SPARQL queries via subgraph matching. Proc. VLDB Endow., 4(1): 482-493, 2011.
+
+[^4] G. Aluç, M. T. Özsu, K. Daudjee, and O. Hartig. <a href="https://cs.uwaterloo.ca/~galuc/chameleon-db/">chameleon-db: a workload-aware robust RDF data management system</a>. Technical Report CS-2013-10, University of Waterloo, 2013.
