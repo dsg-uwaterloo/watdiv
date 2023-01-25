@@ -1,23 +1,14 @@
 # WatDiv
 
 
-## Waterloo SPARQL Diversity Test Suite
+## Benchmark Details
 
-WatDiv is a benchmark designed to measure how an RDF data management system performs across a wide spectrum of SPARQL queries with varying structural characteristics and selectivity classes.
-
-WatDiv consists of two components: the data generator and the query (and template) generator. The data generator generates the RDF dataset of a specified size while the query generator focuses on the generation of test queries that will be used in the study.
-
-### Description of WatDiv
-
-The detailed description of WatDiv is <a href="https://dsg-uwaterloo.github.io/watdiv/Description.md">here</a>.
-
-<!--
 ### Description of the Dataset
 
 The WatDiv data generator allows users to define their own dataset through a dataset description language (see tutorial). This way, users can control
 
 * which entities to include in their dataset,
-* how "well-structured" each entity is (for details please refer to S. Duan, A. Kementsietsidis, K. Srinivas, and O. Udrea. Apples and oranges: a comparison of RDF benchmarks and real RDF datasets. In *Proc. ACM SIGMOD Int. Conf. on Management of Data*, 2011, pages 145-156.,
+* how "well-structured" each entity is (for details please refer to a research paper by Dunn et all [^1],
 * how different entities are associated,
 * the probability that an entity of type X is associated with an entity of type Y, and
 * the cardinality of such associations.
@@ -25,11 +16,12 @@ The WatDiv data generator allows users to define their own dataset through a dat
 Using these features,  the WatDiv test dataset is designed (see the associated <a href="watdiv-data-model.txt">dataset description model</a>). By executing the data generator with different scale factors, it is possible to generate test datasets with different sizes. <a href="#table:triples">Table 1</a> lists the properties of the dataset at scale factor=1.
 
 <table border="1" cellpadding="0" cellspacing="0">
-	<caption>
+    <caption>
          <a name="table:triples"> 
             Table 1. Characteristics of the WatDiv test dataset at scale factor=1.
          </a>
      </caption>
+<!---   <thead><tr><th align="left">Column 1</th><th align="right">#</th></tr></thead> -->
 <tbody>
 <tr valign="top"><td><i>triples</i></td><td> 105257</td></tr>
 <tr valign="top"><td><i>distinct subjects</i></td><td> 5597</td></tr>
@@ -39,6 +31,8 @@ Using these features,  the WatDiv test dataset is designed (see the associated <
 <tr valign="top"><td><i>literals</i></td><td> 14286</td></tr>
 <tr valign="top"><td><i>distinct literals</i></td><td> 8018</td></tr>
 </tbody>
+<!---<tfoot><tr valign="top"><td align="right">Sum:</td><td align="right">1,234,569</td></tr>
+</tfoot>-->
 </table>
 
 An important characteristic that distinguishes the WatDiv test dataset from existing benchmarks is that instances of the same entity do not necessarily have the same set of attributes. <a href="#table:entities">Table 2</a> lists all the different entities used in WatDiv. Take the *Product* entity for instance. *Product instances* may be associated with different *Product Categories* (e.g., Book, Movie, Classical Music Concert, etc.), but depending on which category a product belongs to, it will have a different set of attributes. For example, products that belong to the category "Classical Music Concert" have the attributes *mo:opus*, *mo:movement*, *wsdbm:composer*, *mo:performer* (in addition to the attributes that is common to every product), whereas products that belong to the category "Book" have the attributes *sorg:isbn*, *sorg:bookEdition* and *sorg:numberOfPages*. Furthermore, even within a single product category, not all instances share the same set of attributes. For example, while *sorg:isbn* is a required attribute for a book, *sorg:bookEdition* (Pr=0.6) and *sorg:numberOfPages* (Pr=0.25) are optional attributes, where Pr indicates the probability that an instance will be generated with that attribute. It must be also noted that some attributes are correlated, which means that either all or none of the correlated attributes will be present in an instance (the *pgroup* construct in the WatDiv dataset description language allows the grouping of such correlated attributes). For a complete list of probabilities, please refer to Tables 3 and 4 in Appendix.
@@ -68,6 +62,8 @@ An important characteristic that distinguishes the WatDiv test dataset from exis
 <tr valign="top"><td>wsdbm:Role*</td><td> 3</td></tr>
 <tr valign="top"><td>wsdbm:Gender*</td><td> 2</td></tr>
 </tbody>
+<!---<tfoot><tr valign="top"><td align="right">Sum:</td><td align="right">1,234,569</td></tr>
+</tfoot>-->
 </table>
 
 In short, the WatDiv test dataset is designed such that
@@ -90,40 +86,7 @@ WatDiv generates test workloads that are as diverse as possible. WatDiv offers t
 * __Stress Testing:__ As described in the <a href="https://doi.org/10.1007/978-3-319-11964-9_13">stress testing paper</a>, this use case offers a much more thorough investigation of systems. To generate query templates, follow the installation procedures.
 
 At this point, you may be wondering how these differentiating aspects of WatDiv affect system evaluation, and why they are important at all. The answer is trivial: by relying on a more diverse dataset as such (which is typical for data on the Web), it is possible to generate test queries that focus on much wider aspects of query evaluation, which cannot be easily captured by other benchmarks. Consider the two SPARQL query templates C3 and S7 (cf., basic testing query templates). C3 is a star query that retrieves certain information about users such as the products they like, their friends and some demographics information. For convenience, for each triple pattern in the query template, we also display its selectivity (the reported selectivities are estimations based on the probability distributions specified in the WatDiv dataset description model). Note that while individually triple patterns in C3 are not that selective, this query as a whole, is very selective. Now, consider S7, which (as a whole) is also very selective, but unlike C3, its selectivity is largely due to only a single triple pattern. It turns out that different systems behave very differently for these queries. Systems like RDF-3x [2], which (i) decompose queries into triple patterns, (ii) find a suitable ordering of the join operations and then (iii) execute the joins in that order, perform very well on queries like S7 because the first triple pattern they execute is very selective. On the other hand, they do not do as well on queries like C3 because the decomposed evaluation produces many irrelevant intermediate tuples. In contrast, gStore [3] treats the star-shaped query as a whole and it can pinpoint the relevant vertices in the RDF graph without performing joins; hence, it is much more efficient in executing C3. For a more detailed discussion of our results, please refer to the technical report [4] and the <a http="https://doi.org/10.1007/978-3-319-11964-9_13">stress testing paper</a>.
--->
 
-### Download the Latest Version
+### References
 
-Provided that you include a citation to [1], you are free to download and use the WatDiv Data and Query Generator (v0.6) from source code (md5sum=9eac247dfdec044d7fa0141ea3ad361f). The software is supplied "as is" and all use is at your own risk.
-
-Executable files are also provided. Source code and executable files of all versions and changelog can be found here.
-
-The datasets used in the experiments in [5], as well as a billion triples dataset are also available for download:
-
-## Talks
-
-* G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. Diversified stress testing of RDF data management systems ([Video](http://videolectures.net/iswc2014_aluc_rdf_data_management/)). Talk at 13th Int. Semantic Web Conference, Trentino, Italy, 2004.
-
-## Publications
-
-1. G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. <a href="https://doi.org/10.1007/978-3-319-11964-9_13">Diversified stress testing of RDF data management systems</a>, In _Proc. 13th Int. Semantic Web Conference_, Part I, pages 197–212, 2014.
-
-2. G. Aluç, M. T. Özsu, and K. Daudjee. <a href="https://dl.acm.org/doi/10.14778/2732951.2732957">Workload matters: Why RDF databases need a new design</a>, _Proc. VLDB Endowment_, 7(10):837–840, 2014.
-
-3. L. Gao, L. Golab, M. T. Özsu, G. Aluç. <a href="https://dl.acm.org/doi/10.1145/3208352.3208355">Stream WatDiv: A Streaming RDF Benchmark</a>, In _Proc. International Workshop on Semantic Big Data_, pages 1-6, 2018.
-
-## Artifacts
-
-## People
-
-[Güneş Aluç](https://www.linkedin.com/in/gunes-aluc-66588a221/) 
-
-[M. Tamer Özsu](https://cs.uwaterloo.ca/~tozsu/)
-
-[Khuzaima Daudjee](https://cs.uwaterloo.ca/~kdaudjee/)
-
-[Olaf Hartig](http://olafhartig.de)
-
-[Lukasz Golab](http://www.engineering.uwaterloo.ca/~lgolab/)
-
-[Libo Gao](https://www.linkedin.com/in/libo-gao/) 
+[^1] S. Duan, A. Kementsietsidis, K. Srinivas, and O. Udrea. Apples and oranges: a comparison of RDF benchmarks and real RDF datasets. In *Proc. ACM SIGMOD Int. Conf. on Management of Data*, 2011, pages 145-156.
