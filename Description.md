@@ -124,10 +124,10 @@ In the latest version, you may specify (i) the number of bound patterns in the q
 
 ### References
 
-[<a name="ref:Duan">1] S. Duan, A. Kementsietsidis, K. Srinivas, and O. Udrea. Apples and oranges: a comparison of RDF benchmarks and real RDF datasets. In *Proc. ACM SIGMOD Int. Conf. on Management of Data*, 2011, pages 145-156.
+[<a name="ref:Duan">1</a>] S. Duan, A. Kementsietsidis, K. Srinivas, and O. Udrea. Apples and oranges: a comparison of RDF benchmarks and real RDF datasets. In *Proc. ACM SIGMOD Int. Conf. on Management of Data*, 2011, pages 145-156.
 
-[<a name="ref:Neumann">2] T. Neumann and G. Weikum. The RDF-3X engine for scalable management of RDF data. VLDB J., 19(1): 91-113, 2010.
+[<a name="ref:Neumann">2</a>] T. Neumann and G. Weikum. The RDF-3X engine for scalable management of RDF data. VLDB J., 19(1): 91-113, 2010.
 
-[<a name="ref:Zou">3] L. Zou, J. Mo, D. Zhao, L. Chen, and M. T. Özsu. gStore: Answering SPARQL queries via subgraph matching. Proc. VLDB Endow., 4(1): 482-493, 2011.
+[<a name="ref:Zou">3</a>] L. Zou, J. Mo, D. Zhao, L. Chen, and M. T. Özsu. gStore: Answering SPARQL queries via subgraph matching. Proc. VLDB Endow., 4(1): 482-493, 2011.
 
-[<a name="ref:Aluc">4] G. Aluç, M. T. Özsu, K. Daudjee, and O. Hartig. <a href="https://cs.uwaterloo.ca/~galuc/chameleon-db/">chameleon-db: a workload-aware robust RDF data management system</a>. Technical Report CS-2013-10, University of Waterloo, 2013.
+[<a name="ref:Aluc">4</a>] G. Aluç, M. T. Özsu, K. Daudjee, and O. Hartig. <a href="https://cs.uwaterloo.ca/~galuc/chameleon-db/">chameleon-db: a workload-aware robust RDF data management system</a>. Technical Report CS-2013-10, University of Waterloo, 2013.
