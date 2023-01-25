@@ -98,9 +98,9 @@ Provided that you include a citation to [1], you are free to download and use th
 
 Executable files are also provided. Source code and executable files of all versions and changelog can be found <a href="https://dsg.uwaterloo.ca/watdiv/changelog.shtml">here</a>.
 
-The datasets used in the experiments in [5], as well as a billion triples dataset are also available for download:
+The datasets used in the experiments in [1], as well as a billion triples dataset are also available for download:
 
-* <a href="https://dsg.uwaterloo.ca/watdiv/watdiv.10M.tar.bz2">10M Triples</a> 58,558,746 bytes
+* [10M Triples](https://dsg.uwaterloo.ca/watdiv/watdiv.10M.tar.bz2) 58,558,746 bytes
 * <a href="https://dsg.uwaterloo.ca/watdiv/watdiv.100M.tar.bz2">100M Triples</a> 629,608,436 bytes
 * <a href="https://dsg.uwaterloo.ca/watdiv/watdiv.1000M.tar.bz2">1B Triples</a> 6,502,656,740 bytes
 
@@ -120,11 +120,11 @@ You may also download the <a href="https://dsg.uwaterloo.ca/watdiv/stress-worklo
 
 ## Artifacts
 
-See the <a href="https://dsg-uwaterloo.github.io/watdiv/Description.md">Description</a> document.
+See the [Description](Description.md) document.
 
 ## People
 
-[Güneş Aluç](https://www.linkedin.com/in/gunes-aluc-66588a221/) -- contact for all questions/bug reports (galuc-red-@-blue-uwaterloo.ca (without the colors/hypens).)
+[Güneş Aluç](https://www.linkedin.com/in/gunes-aluc-66588a221/) -- contact for all questions/bug reports galuc-red-@-blue-uwaterloo.ca (without the colors/hypens)
 
 [M. Tamer Özsu](https://cs.uwaterloo.ca/~tozsu/)
 
