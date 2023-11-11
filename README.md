@@ -7,6 +7,12 @@ WatDiv is a benchmark designed to measure how an RDF data management system perf
 
 WatDiv consists of two components: the data generator and the query (and template) generator. The data generator generates the RDF dataset of a specified size while the query generator focuses on the generation of test queries that will be used in the study.
 
+### Attribution
+
+When using WatDiv, please cite the following publication:
+
+G. Aluç, O. Hartig, M. T. Özsu, and K. Daudjee. [Diversified stress testing of RDF data management systems](https://doi.org/10.1007/978-3-319-11964-9_13), In _Proc. 13th Int. Semantic Web Conference_, Part I, pages 197–212, 2014.
+
 ### Description of WatDiv
 
 The detailed description of WatDiv is [here](Description.md).
